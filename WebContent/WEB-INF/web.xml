@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
 
 	<!-- 项目名称 名片夹 -->
 	<display-name>minobook</display-name>
 
-
+	<!-- if specified, this value is used as the Hudson home directory -->
+	<env-entry>
+		<env-entry-name>HUDSON_HOME</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>D:/softwear/apache-tomcat-8.0.35-windows-x64/apache-tomcat-8.0.35/webapps</env-entry-value>
+	</env-entry> <!-- 在<env-entry-value>节点中填入路径，windows系统建议使用/分隔路径 -->
 </web-app>
